@@ -1,0 +1,102 @@
+# ================================
+# KİŞİSEL VERİLER - ASLA GİTHUB'A YÜKLEME!
+# ================================
+
+# Kişisel CV ve Resume dosyaları
+user_data.py
+CV_*.pdf
+CV_*.docx
+Resume_*.pdf
+Resume_*.docx
+test_cv_*.pdf
+test_ats_*.docx
+test_output*.pdf
+test_output*.docx
+
+# HTML şablonları ve test dosyaları
+ATS CV Hazırlayıcı.html
+design_*.html
+
+# Markdown not dosyaları
+*_PROMPTU.md
+*_REHBERI.md
+ATS_Keyword_Analysis.txt
+
+# ================================
+# ÇEV DEĞIŞKENLERI VE GİZLİ BİLGİLER
+# ================================
+.env
+.env.local
+.env.production
+*.env
+config.json
+secrets.json
+credentials.json
+*secret*
+*password*
+*token*
+*.pem
+*.key
+
+# ================================
+# PYTHON
+# ================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ================================
+# IDE VE EDİTÖR AYARLARI
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.claude/
+
+# ================================
+# JUPYTER NOTEBOOK
+# ================================
+.ipynb_checkpoints
+*.ipynb
+
+# ================================
+# TEST VE LOG DOSYALARI
+# ================================
+*.log
+*.sqlite
+*.db
+test_system.py
+htmlcov/
+.coverage
+.pytest_cache/
+
+# ================================
+# FONT DOSYALARI (Opsiyonel - boyut büyükse)
+# ================================
+# fonts/*.ttf
+# fonts/*.otf

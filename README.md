@@ -1,171 +1,127 @@
-# 📄 ATS-Friendly Resume Builder
+# ATS-Friendly Resume Builder
 
-> **Streamlit tabanlı, ATS uyumlu CV oluşturma ve analiz platformu**
-
-Profesyonel CV'nizi kolayca oluşturun, optimize edin ve iş ilanlarına uyumluluğunu analiz edin. Türkçe ve İngilizce dil desteği ile PDF ve DOCX formatlarında çıktı alın.
+A Streamlit-based application for creating ATS-optimized resumes with multi-language support, job posting analysis, and professional templates.
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-In%20Development-yellow.svg)](https://github.com)
 
-## ⚠️ Proje Durumu
+> **Note:** This project is under active development. Core features are functional, but additional improvements are ongoing.
 
-**🚧 Bu proje aktif geliştirme aşamasındadır.**
+## Features
 
-Mevcut sürüm temel işlevleri içermektedir ancak hala geliştirmeler devam etmektedir. Kararlı sürüm için lütfen release notlarını takip edin.
+### Core Functionality
+- **Multi-language Support**: Turkish and English interface with automatic translation
+- **ATS Optimization**: Format compliance with Applicant Tracking Systems
+- **Professional Templates**: Three distinct styles (Classic, Modern, Academic)
+- **Job Posting Analysis**: Calculate resume-job description matching scores
+- **Export Formats**: PDF and DOCX output with live preview
 
-## ✨ Özellikler
+### Analysis Tools
+- Keyword extraction from job postings
+- Percentage-based matching score calculation
+- Missing skills identification
+- Interactive preview before export
 
-### 🎯 Çekirdek Özellikler
-- **Çok Dilli Destek**: Türkçe ve İngilizce arayüz ve CV oluşturma
-- **ATS Optimizasyonu**: Başvuru takip sistemlerine uyumlu CV formatları
-- **3 Profesyonel Şablon**: Klasik, Modern ve Akademik tasarımlar
-- **Otomatik Çeviri**: Türkçe CV'nizi otomatik olarak İngilizceye çevirin
-- **İş İlanı Analizi**: CV'nizin iş ilanlarıyla uyumluluğunu hesaplama
+## Installation
 
-### 📊 Analiz Araçları
-- **ATS Anahtar Kelime Analizi**: İş ilanındaki kritik kelimeleri tespit etme
-- **Eşleşme Skoru**: CV ve iş ilanı arasındaki uyumluluğu yüzdesel gösterme
-- **Eksik Beceriler**: CV'nizde bulunmayan önemli becerileri belirleme
-- **Canlı Önizleme**: CV'nizi oluşturmadan önce görüntüleyin
+### Prerequisites
+- Python 3.8 or higher
+- pip package manager
 
-### 📁 Çıktı Formatları
-- **PDF**: 3 farklı şablon (Klasik, Modern, Akademik)
-- **DOCX**: ATS uyumlu Word formatı
-- **JSON**: Veri yedekleme ve geri yükleme
+### Setup
 
-## 🚀 Kurulum
-
-### Gereksinimler
-- Python 3.8 veya üzeri
-- pip paket yöneticisi
-
-### Adım 1: Repository'yi klonlayın
+1. Clone the repository:
 ```bash
-git clone https://github.com/kullanici-adiniz/ats-resume-builder.git
+git clone https://github.com/barancanbalta/ats-resume-builder.git
 cd ats-resume-builder
 ```
 
-### Adım 2: Gerekli paketleri yükleyin
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-### Adım 3: Kullanıcı verisi oluşturun
+3. Configure user data:
 ```bash
-# Örnek dosyayı kopyalayın
 cp user_data.example.py user_data.py
-
-# user_data.py dosyasını düzenleyin ve kendi bilgilerinizi ekleyin
+# Edit user_data.py with your personal information
 ```
 
-### Adım 4: Uygulamayı çalıştırın
+4. Run the application:
 ```bash
 streamlit run app.py
 ```
 
-Tarayıcınızda `http://localhost:8501` adresine gidin.
+The application will open in your browser at `http://localhost:8501`.
 
-## 📖 Kullanım
+## Usage
 
-### 1️⃣ Dil Seçimi
-Uygulama açıldığında Türkçe veya İngilizce dil seçimi yapın.
+The application guides you through the following steps:
 
-### 2️⃣ Kişisel Bilgiler
-- Ad Soyad, e-posta, telefon
-- LinkedIn ve GitHub profil linkleri
-- Profesyonel özet
+1. **Language Selection**: Choose Turkish or English
+2. **Personal Information**: Name, contact details, professional summary
+3. **Work Experience**: Job titles, companies, dates, achievements
+4. **Education**: Degrees, institutions, GPA, rankings
+5. **Projects & Certifications**: Professional projects and credentials
+6. **Skills**: Programming languages, frameworks, tools, languages
+7. **Job Analysis** (Optional): Paste job description for compatibility analysis
+8. **Template Selection**: Choose template and export as PDF/DOCX
 
-### 3️⃣ İş Deneyimi
-- Pozisyon, şirket, lokasyon
-- Başlangıç ve bitiş tarihleri
-- Başarılarınızı maddeler halinde ekleyin
-
-### 4️⃣ Eğitim Bilgileri
-- Üniversite, bölüm, mezuniyet tarihi
-- GPA ve sıralama bilgileri
-
-### 5️⃣ Projeler ve Sertifikalar
-- Kişisel/profesyonel projeler
-- Aldığınız eğitim ve sertifikalar
-
-### 6️⃣ Beceriler
-- Programlama dilleri
-- Framework ve kütüphaneler
-- Araçlar ve yazılımlar
-- Yabancı diller
-
-### 7️⃣ İş İlanı Analizi (Opsiyonel)
-İş ilanını yapıştırarak CV'nizin uyumluluğunu analiz edin.
-
-### 8️⃣ Şablon Seçimi ve İndirme
-CV şablonunu seçin ve PDF/DOCX formatında indirin.
-
-## 🏗️ Proje Yapısı
+## Project Structure
 
 ```
 ats-resume-builder/
-├── app.py                      # Ana uygulama dosyası
-├── user_data.example.py        # Örnek kullanıcı verisi
-├── user_data.py               # Kişisel veri (gitignore'da)
-├── requirements.txt           # Python bağımlılıkları
-├── .gitignore                # Git ignore kuralları
+├── app.py                   # Main application
+├── user_data.example.py     # User data template
+├── requirements.txt         # Python dependencies
+├── .gitignore              # Excluded files
 │
-├── cv_generator.py           # PDF oluşturma modülü
-├── cv_generator_docx.py      # DOCX oluşturma modülü
-├── translator_utils.py       # Çeviri yardımcıları
-├── matcher_utils.py          # İş ilanı eşleştirme
-├── localization.py           # Dil dosyaları
-├── ui_components.py          # UI bileşenleri
-├── pdf_utils.py             # PDF önizleme
+├── cv_generator.py         # PDF generation module
+├── cv_generator_docx.py    # DOCX generation module
+├── translator_utils.py     # Translation utilities
+├── matcher_utils.py        # Job matching logic
+├── localization.py         # Language files
+├── ui_components.py        # UI components
+├── pdf_utils.py           # PDF preview utilities
 │
-└── fonts/                   # Font dosyaları
-    ├── DejaVuSans.ttf
-    └── ...
+└── fonts/                 # Font files
 ```
 
-## 🔒 Gizlilik ve Veri
+## Privacy
 
-Bu proje **privacy-first** tasarım prensibiyle geliştirilmiştir. Kişisel verileriniz yerel bilgisayarınızda kalır ve `.gitignore` ile otomatik olarak korunur. Oluşturduğunuz CV'ler ve kişisel bilgilerinizi içeren `user_data.py` dosyası asla GitHub'a yüklenmez.
+This application follows a privacy-first design. All personal data remains local on your machine. The `.gitignore` configuration ensures that your `user_data.py` file and generated resumes are never committed to version control.
 
-## 🛠️ Teknolojiler
+## Technology Stack
 
-- **Python 3.8+**: Ana programlama dili
-- **Streamlit**: Web arayüzü framework'ü
-- **FPDF2**: PDF oluşturma
-- **python-docx**: Word belgeleri oluşturma
-- **deep-translator**: Otomatik çeviri
-- **Pandas**: Veri işleme
+- **Python 3.8+**
+- **Streamlit** - Web framework
+- **FPDF2** - PDF generation
+- **python-docx** - DOCX generation
+- **deep-translator** - Automatic translation
+- **Pandas** - Data processing
 
-## 📝 Lisans
+## Contributing
 
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+Contributions are welcome. Please follow these steps:
 
-## 🤝 Katkıda Bulunma
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
 
-Katkılarınızı bekliyoruz! Lütfen şu adımları izleyin:
+## Roadmap
 
-1. Bu repository'yi fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/yeni-ozellik`)
-3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik eklendi'`)
-4. Branch'inizi push edin (`git push origin feature/yeni-ozellik`)
-5. Pull Request oluşturun
+- Additional resume templates
+- Cover letter generation
+- LinkedIn integration
+- Enhanced ATS analysis algorithms
+- Additional language support
 
-## 🐛 Bilinen Sorunlar ve Geliştirmeler
+## License
 
-- [ ] Daha fazla CV şablonu eklenmesi
-- [ ] Cover letter (ön yazı) oluşturma özelliği
-- [ ] LinkedIn entegrasyonu
-- [ ] Daha gelişmiş ATS analiz algoritmaları
-- [ ] Çoklu dil desteği genişletilmesi
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## 📧 İletişim
+## Contact
 
-Sorularınız veya önerileriniz için:
-- Issue açın
-- Pull Request gönderin
-
----
-
-⭐ **Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!**
+For questions or suggestions, please open an issue on GitHub.

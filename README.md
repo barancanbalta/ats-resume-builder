@@ -125,21 +125,9 @@ ats-resume-builder/
     └── ...
 ```
 
-## 🔒 Güvenlik ve Gizlilik
+## 🔒 Gizlilik ve Veri
 
-**ÖNEMLİ**: Bu uygulama kişisel verilerinizi içerir. GitHub'a yüklerken dikkat edin!
-
-### Korunan Dosyalar (.gitignore ile)
-- `user_data.py` - Kişisel bilgileriniz
-- `CV_*.pdf` / `CV_*.docx` - Oluşturulan CV'ler
-- `Resume_*.pdf` / `Resume_*.docx` - İngilizce CV'ler
-- Tüm test dosyaları ve çıktılar
-
-### Güvenli Kullanım
-1. **ASLA** `user_data.py` dosyasını GitHub'a yüklemeyin
-2. **ASLA** oluşturduğunuz CV dosyalarını commit etmeyin
-3. `.gitignore` dosyasını silmeyin veya değiştirmeyin
-4. Kendi fork'unuzu oluştururken "Private" seçeneğini kullanın
+Bu proje **privacy-first** tasarım prensibiyle geliştirilmiştir. Kişisel verileriniz yerel bilgisayarınızda kalır ve `.gitignore` ile otomatik olarak korunur. Oluşturduğunuz CV'ler ve kişisel bilgilerinizi içeren `user_data.py` dosyası asla GitHub'a yüklenmez.
 
 ## 🛠️ Teknolojiler
 
